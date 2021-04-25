@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>4moms</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="top-banner">
+      <p>Free shipping on orders over $49</p>
+    </div>
+    <div class="main-container">
+      <div class="navbar">
+        <div class="nav-container">
+          <span class="nav-item" onclick="checkSidebar()">Shop</span>
+          <span class="nav-item">About 4moms</span>
+        </div>
+
+        <span id="menu-button" class="material-icons mobile-icons" onclick="checkSidebar()">menu</span>
+        <span class="material-icons mobile-icons">account_circle</span>
+        <img class="logo" src="images/logo.png" alt="4 moms logo">
+        <span class="material-icons mobile-icons" onclick="openSearchbar()">search</span>
+        <span class="material-icons mobile-icons">shopping_cart</span>
+
+        <div class="nav-container right-container">
+          <span id="location-button" class="nav-item location" onclick="checkLocations()"> 
+            <i class="material-icons">place</i> United States
+          </span>
+          <span class="nav-item">Support</span>
+          <span class="material-icons nav-icon" onclick="openSearchbar()">search</span>
+          <span class="material-icons nav-icon">account_circle</span>
+          <span class="material-icons nav-icon">shopping_cart</span>
+        </div>
+
+        <div id="locations" class="locations">
+          <div class="locations-container">
+            <span class="country seleted">United States</span>
+            <span class="country">Canada</span>
+            <span class="country">United Kingdom</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="highlight">
+        <div class="highlight-container">   
+          <div class="highlight-hed">
+            <p>Freeing up your hands.</p>
+            <p>So you can do more.</p>
+          </div>
+          <div class="highlight-dek">
+            <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Provident quisquam totam fugit.</p>
+          </div>
+          <div class="highlight-button">
+            <a href="/">Shop Bassinets</a>
+          </div>
+        </div>
+        <div class="highlight-images">
+          <img src="images/baby-thing-1.png" alt="Baby stuff">
+        </div>
+      </section>
+  
+      <section class="perks">
+        <div class="perks-container">
+            <div class="perks-item">
+              <img src="images/suns.png" alt="">
+              <div class="hed">Functional Design</div>
+              <div class="dek">Product designed to make parents live easier</div>
+            </div>
+            <div class="perks-item">
+              <img src="images/arrow.png" alt="">
+              <div class="hed">Parent Tested</div>
+              <div class="dek">Tested with real parents to ensure the best results</div>
+            </div>
+            <div class="perks-item">
+              <img src="images/dots.png" alt="">
+              <div class="hed">Technology</div>
+              <div class="dek">Tested with real parents to ensure the best results</div>
+            </div>
+        </div>
+      </section>
+
+      <section class="shop">
+        <div class="shop-container">
+          <a href="#">Shop Seats
+            <span class="material-icons">arrow_forward_ios</span>
+          </a>
+          <img src="images/shop-seats.png" alt="">
+        </div>
+        <div class="shop-container">
+          <a href="#">Shop Playards
+            <span class="material-icons">arrow_forward_ios</span>
+          </a>
+          <img src="images/shop-playards.png" alt="">
+        </div>
+        <div class="shop-container">
+          <a href="#">Shop Feeding
+            <span class="material-icons">arrow_forward_ios</span>
+          </a>
+          <img src="images/shop-feeding.png" alt="">
+        </div>
+        <div class="shop-container">
+          <a href="#">Shop Bassinets
+            <span class="material-icons">arrow_forward_ios</span>
+          </a>
+          <img src="images/shop-bassinets.png" alt="">
+        </div>
+        <div class="shop-container">
+          <a href="#">Shop Tubs
+            <span class="material-icons">arrow_forward_ios</span>
+          </a>
+          <img src="images/shop-tubs.png" alt="">
+        </div>
+        <div class="shop-container">
+          <a href="#">Shop Mobiles
+            <span class="material-icons">arrow_forward_ios</span>
+          </a>
+          <img src="images/shop-mobiles.png" alt="">
+        </div>
+      </section>
+    </div>
+    <div id="sidebar" class="sidebar">
+      <a href="#">Shop All</a>
+      <a href="#">Seats</a>
+      <a href="#">Playards</a>
+      <a href="#">Feeding</a>
+      <a href="#">Bassinets</a>
+      <a href="#">Bath</a>
+      <a href="#">Mobile</a>
+      <a href="#">Accessories</a>
+      <a href="#">Spare Parts</a>
+      <a href="#" class="about-link">About 4moms</a>
+      <a href="#">Support</a>
+    </div>
+    <div id="shop-details" class="shop-details">
+      <div class="shop-details-container">
+        <img class="shop-details-image" src="images/baby-photo.png" alt="">
+        <p class="shop-details-dek">Comfotarble Seats for infants that offer a Variaty of features like motions and articulations.</p>
+      </div>
+    </div>
+    <div id="searchbar" class="searchbar">
+      <div class="searchbar-container">
+        <span class="material-icons">search</span>
+        <input type="text" placeholder="search...">
+        <span class="material-icons" onclick="closeSearchbar()">close</span>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
