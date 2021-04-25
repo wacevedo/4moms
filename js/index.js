@@ -115,4 +115,23 @@ function checkLocations() {
   }
 }
 
+function loadCollapsibles() {
+  var coll = document.getElementsByClassName("collapsible");
+
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+      var listContent = this.nextElementSibling;
+      if (listContent.style.display === 'flex') {
+        listContent.style.display = 'none';
+        this.childNodes[1].className = 'fas fa-plus';
+      } else {
+        listContent.style.display = 'flex';
+        this.childNodes[1].className = 'fas fa-minus';
+      }
+    });
+  }
+}
+
 createHoverLinksShopDetails();
+loadCollapsibles();
